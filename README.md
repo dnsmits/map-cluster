@@ -11,11 +11,12 @@ MapCluster is a Go + React stack for streaming clustered map data with PostGIS, 
 - Renders MIL-STD-2525 symbols in the React Leaflet client with `milsymbol`, with a heatmap view built from the same viewport data
 - Runs as a Docker stack
 
-## Project Layout
+## Project layout
 
-- `cmd/api` contains the Go server entrypoint
-- `internal/` contains config, cache, db, repository, service, and HTTP layers
-- `../frontend` contains the React + Vite Leaflet client
+- `backend/` contains the Go API and websocket server
+- `backend/cmd/api` contains the server entrypoint
+- `backend/internal/` contains config, cache, db, repository, service, and HTTP layers
+- `frontend/` contains the React + Vite Leaflet client
 
 ## GeoJSON
 
